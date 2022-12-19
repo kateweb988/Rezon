@@ -1,0 +1,134 @@
+body
+   font-family: 'Montserrat', sans-serif
+   background: #FFFFFF
+   color: $blue
+   font-weight: 500
+   font-size: 16px
+   line-height: 130%
+a
+   text-decoration: none
+   box-sizing: border-box
+   &:hover 
+      color: $light_blue
+.container
+   max-width: 1920px
+   margin: 0 auto
+   padding: 0 100px
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.btn
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: background 0.5s, color 0.5s
+   width: 212px
+   height: 59px
+   border-radius: 4px
+   font-weight: 800
+   font-size: 16px
+   line-height: 120%
+   letter-spacing: 0.01em
+   text-transform: uppercase
+.btn1 
+   background: $blue
+   border: 1px solid $blue
+   color: #FFFFFF
+   &:hover 
+      background: $light_blue
+      color: white 
+      border: 1px solid $light_blue
+   &.disabled
+      background: #878787
+      pointer-events: none
+      border: none
+.btn2
+   width: 212px
+   height: 35px
+   border: 1px solid $blue
+   background: transparent
+   color: $blue
+   &:hover 
+      background: $blue
+      color: #FFFFFF 
+   &.disabled 
+      border: 1px solid #878787
+      color: #878787
+      pointer-events: none
+.d-flex
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   font-weight: 800
+   font-size: 32px
+   line-height: 130%
+   letter-spacing: 0.03em
+   text-transform: uppercase
+   background: radial-gradient(80.24% 53.9% at 50.06% 50.22%, #003987 0%, #00214E 100%)
+   -webkit-background-clip: text
+   -webkit-text-fill-color: transparent
+   background-clip: text
+   text-fill-color: transparent
+   margin: 0
+   max-width: 600px
+h2 
+   font-weight: 800
+   font-size: 32px
+   line-height: 130%
+   letter-spacing: 0.03em
+   text-transform: uppercase
+   color: #002B66
+   margin: 0
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: fill 0.5s
+a
+   transition: color 0.5s
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: 0.5s
+      outline: none
+      border: 1px solid $light_blue !important
+input
+   transition: 0.5s
+   box-sizing: border-box
+   font-family: 'Rubik', sans-serif
+   border: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $light_blue !important
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path
+   transition: fill 0.5s
+div, q 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s

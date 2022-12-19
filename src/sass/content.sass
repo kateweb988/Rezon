@@ -1,0 +1,1503 @@
+.menu 
+   display: flex
+   position: relative
+   top: 81px
+   right: 0px
+.menu .button 
+   position: absolute
+   display: flex
+   z-index: 1000000
+   right: -8px
+   top: -8px
+   width: 49px
+   height: 19px
+   align-items: center
+   justify-content: center
+   margin-left: auto
+.menu .button.active 
+   position: fixed
+   right: 120px
+   top: 64px
+.menu .button span 
+   position: absolute
+   top: calc(50% - 1px)
+   transition: .3s all ease-in-out
+   width: 29px
+   height: 3px
+   border-radius: 1px
+   background-color: $blue
+.menu .button span::before 
+   content: ''
+   position: absolute
+   top: -8px
+   transition: .3s all ease-in-out
+   width: 29px
+   height: 3px
+   border-radius: 1px
+   background-color: $blue
+.menu .button span::after 
+   content: ''
+   position: absolute
+   bottom: -8px
+   transition: .3s all ease-in-out
+   width: 29px
+   height: 3px
+   border-radius: 1px
+   background-color: $blue
+.menu .button.active span 
+   background-color: transparent !important
+   width: 24px
+.menu .button.active span::before 
+   content: ''
+   width: 29px
+   top: calc(50% - 2px)
+   transform: rotate(45deg)
+.menu .button.active span::after 
+   content: ''
+   bottom: calc(50% - 1px)
+   transform: rotate(-44deg)
+   background-color: $blue
+   width: 29px
+.burger 
+   position: fixed
+   flex-direction: column
+   right: -150%
+   top: 0px
+   z-index: 100000
+   display: flex
+   box-sizing: border-box
+   transition: .3s all ease-in-out
+   width: auto
+   height: auto
+   background-color: #000c28
+.burger.active 
+   right: 95px
+   top: 34px
+   padding: 81px 31px 25px
+   width: 281px
+   height: auto
+   text-align: right
+   background: linear-gradient(91.75deg, rgba(255, 255, 255, 0.69) 4.1%, rgba(255, 255, 255, 0.16) 94.01%)
+   box-shadow: 8px 10px 26px rgba(100, 0, 116, 0.25)
+   backdrop-filter: blur(35px)
+   border-radius: 10px
+   display: block
+.container2 
+   position: relative
+   margin-top: -21px
+.nav 
+   &__logo 
+      width: 127px
+      height: 33px
+      position: absolute
+      left: 95px
+      top: 67px
+      z-index: 2
+      img 
+         width: 100%
+         height: 100%
+         object-fit: contain
+   &__box 
+      padding: 42px 0 23px
+      align-items: center
+      justify-content: space-between
+      position: relative
+      z-index: 2
+   &__item 
+      margin-bottom: 24px
+      &:last-child
+         margin-bottom: 0
+   &__link 
+      color: $blue
+      font-weight: 600
+      font-size: 16px
+      line-height: 130%
+      display: flex
+      align-items: center
+      text-align: right
+      justify-content: flex-end
+      letter-spacing: 0.02em
+.header 
+   position: relative
+   overflow: visible
+   &__coin 
+      position: absolute 
+      right: -121px
+      top: 80px
+   &__new 
+      align-items: center
+      p 
+         font-weight: 400
+         font-size: 16px
+         line-height: 120%
+         text-align: right
+         color: #002B66
+         max-width: 280px
+         margin-right: 24px
+   &__down 
+      position: relative
+      z-index: 2
+      justify-content: space-between
+      align-items: center
+      max-width: 1280px
+      margin: -53px auto 0
+      .header__socials
+         margin-top: 0
+   &__bonus 
+      font-weight: 700
+      font-size: 17.325px
+      line-height: 120.9%
+      letter-spacing: 0.005em
+      text-transform: uppercase
+      margin-top: 3px
+      color: #1B0070
+   &__block
+      width: 356.4px
+      height: 79.2px
+      background: linear-gradient(11.21deg, rgba(255, 162, 201, 0.3) 9.64%, rgba(213, 0, 248, 0.3) 122.92%)
+      backdrop-filter: blur(6.80625px)
+      border-radius: 12.375px
+      text-align: center
+      padding: 16px 30px
+      position: relative
+      img 
+         position: absolute
+         right: -20px
+         top: -24px
+   &__right
+      max-width: 357px
+      margin-left: 150px
+   &__title 
+      color: #003987
+      font-weight: 600
+      font-size: 24px
+      line-height: 90%
+      text-align: center
+      letter-spacing: 0.03em
+      text-transform: uppercase
+      max-width: 242px
+      margin: 0 auto 64px
+      span 
+         font-weight: 900
+   &__slider 
+      width: 100%
+      max-width: 100%
+      max-height: 754px
+      height: 100%
+      overflow: hidden
+      .slick-list
+         overflow: visible
+         max-height: 754px
+      .slick-track 
+         max-height: 754px
+      .slick-arrow
+         position: absolute
+         z-index: 2
+         top: 50%
+      .slick-prev
+         margin-left: 0
+         right: inherit
+         left: 31px
+      .slick-next 
+         margin-left: 0
+         right: 31px
+         left: inherit
+   &:after 
+      content: ""
+      position: absolute
+      bottom: 28px
+      left: 0
+      width: 100%
+      height: 75px
+      z-index: 1
+      background: linear-gradient(to top, #fff, transparent)
+   &__reg 
+      margin-left: auto
+      margin-bottom: 5px
+   &__text 
+      font-weight: 400
+      font-size: 16px
+      line-height: 120%
+      text-align: right
+      color: $blue
+      font-family: 'Rubik', sans-serif
+      max-width: 254px
+      width: 100%
+   &__item 
+      position: relative
+      z-index: 1
+      &_1
+         background: url(/img/bg1.png) no-repeat center center / cover
+         top: -103px
+         .header__pic 
+            max-width: 707px
+            position: relative
+            right: 88px
+            top: 29px
+            z-index: -1
+         .header__box
+            padding-top: 192px
+      &_2
+         background: url(/img/bg2.png) no-repeat center center/cover
+         top: 0
+         // background-size: 100%
+         max-height: 460px
+         margin-top: 120px
+         .header__pic 
+            max-width: 544px
+            position: relative
+            top: -72px
+         .header__box
+            justify-content: flex-start
+      &_3
+         background: url(/img/bg3.png) no-repeat center center/cover
+         top: 0
+         // background-size: 100%
+         max-height: 460px
+         margin-top: 120px
+         .header__down
+            margin-top: 18px
+         .header__title
+            max-width: 320px
+         .header__pic 
+            max-width: 690px
+            position: relative
+            top: 3px
+            margin-left: -80px
+         .header__box
+            justify-content: flex-start
+         .header__right 
+            margin-left: -40px
+            max-width: 495px
+         .header__block 
+            width: 520.68px
+            height: 80.32px
+            border-radius: 9.21235px
+            transform: matrix(0.96, 0, -0.32, 1, 0, 0)
+            background: url(/img/border.png) no-repeat center center / cover
+         .header__bonus 
+            font-weight: 500
+            font-size: 18.4247px
+            line-height: 130.4%
+            text-transform: inherit
+            transform: rotate(0deg)
+            span  
+               font-weight: 700
+      &_4
+         background: url(/img/bg4.png) no-repeat center center/cover
+         top: 0
+         // background-size: 1280px
+         max-height: 460px
+         margin-top: 120px
+         background-size: 100%
+         .header__down 
+            margin-top: 5px
+         .header__title
+            margin-bottom: 20px
+         .header__pic 
+            max-width: 664px
+            position: relative
+            top: -14px
+            right: 43px
+         .header__box
+            justify-content: flex-start
+         .header__right
+            max-width: 420px
+         .header__block
+            width: 392px
+            height: 46px
+            background: linear-gradient(11.21deg, rgba(162, 233, 255, 0.3) 9.64%, rgba(0, 233, 248, 0.111) 122.92%)
+            backdrop-filter: blur(6.80625px)
+            border-radius: 12.375px
+            padding: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-left: 20px
+            img 
+               left: -36px
+               right: inherit
+               top: -27px
+               max-width: 105px
+      &_5
+         background: url(/img/bg1.png) no-repeat center center / cover
+         top: -77px
+         .header__pic 
+            max-width: 500px
+            position: relative
+            right: -33px
+            top: -19px
+            z-index: -1
+         .header__box
+            padding-top: 192px
+   &__one 
+      font-weight: 600
+      font-size: 16.0875px
+      line-height: 130.4%
+      text-align: center
+      letter-spacing: 0.02em
+      max-width: 420px
+      margin: 0 auto 49px
+   &__box 
+      align-items: center
+      justify-content: space-between
+      position: relative
+      z-index: 2
+      // max-width: 1220px
+      margin: 0 auto
+   &__wrap 
+      position: absolute
+      right: 61px
+      top: 170px
+      z-index: 3
+   &__form 
+      margin: 32px 0
+      width: 100%
+      max-width: 540px
+      justify-content: space-between
+      flex: 1 0 auto
+      display: flex
+   &__input 
+      width: 285px
+      height: 60px
+      background: #FFFFFF
+      border-radius: 5px
+      font-size: 16px
+      line-height: 20px
+      padding-left: 10px
+      margin-right: 16px
+   &__btn 
+      border-radius: 5px
+      width: 238px
+      height: 60px
+   &__info 
+      font-weight: 700
+      font-size: 16px
+      line-height: 120.9%
+      letter-spacing: 0.005em
+      text-transform: uppercase
+      color: $blue
+   &__take 
+      color: $blue
+      border-bottom: 1px solid $blue
+      width: max-content
+      transition: color 0.5s, border 0.5s
+      &:hover
+         border-bottom: 1px solid $light_blue
+   &__socials 
+      margin-top: 21.5px
+   &__link
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 45px
+      height: 45px
+      border: 1px solid $blue
+      border-radius: 50%
+      margin-right: 16px
+      transition: background 0.5s
+      &:nth-child(1)
+         .icon 
+            width: 28px
+      &:nth-child(2)
+         .icon 
+            width: 23px
+      &:last-child
+         margin-right: 0
+      .icon
+         width: 24px
+         height: 19px
+         fill: $blue
+      &:hover 
+         background: $blue
+         .icon 
+            fill: white
+.clouds1 
+   position: absolute
+   top: 0
+   right: 0
+   z-index: 2
+.clouds2
+   position: absolute
+   bottom: 0
+   right: 0
+   z-index: 2
+   width: 100%
+.info 
+   overflow: visible
+   position: relative
+   margin-top: 60px
+   &__phones 
+      top: 6px
+      position: relative
+      right: 36px
+      max-width: 505px
+   &__bg 
+      position: absolute
+      z-index: -1
+      &1
+         left: 0
+         top: -172px
+      &2
+         right: 0
+         top: -172px
+   &__fig 
+      position: absolute
+      z-index: -1
+      &1 
+         left: -90px
+         top: 13px
+      &2
+         top: 87px
+         left: 482px
+         z-index: 0
+         width: 94px
+      &3
+         top: 294px
+         left: 485px
+         z-index: 0
+         width: 117px
+      &4 
+         top: -137px
+         right: -99px
+         z-index: -1
+   &__box 
+      align-items: center
+      justify-content: space-between
+      position: relative
+      max-width: 1220px
+      margin: 0 auto
+   &__text 
+      font-weight: 700
+      font-size: 32px
+      line-height: 140%
+      text-transform: uppercase
+      width: 100%
+      max-width: 614px
+      flex: 1 0 auto
+      position: relative
+      z-index: 3
+      .color 
+         color: $light_blue
+.van 
+   padding: 94px 0
+   position: relative
+   &__clouds1 
+      position: absolute
+      left: 0
+      top: -424px
+      z-index: -1
+   &__clouds2
+      position: absolute
+      right: 0
+      top: 54px
+      z-index: -1
+   &__smile 
+      margin: -47px 0 -12px 42px
+   &__box 
+      justify-content: space-between
+      flex-wrap: wrap
+      margin-top: 32px
+      max-width: 1220px
+      margin: 32px auto 0
+   &__item 
+      width: 32.129%
+      position: relative
+      margin-bottom: 40px
+   &__block 
+      position: absolute
+      text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      width: 249px
+      height: 240px
+      background: url(/img/block.png) no-repeat center center / cover
+      top: -79px
+      right: 116px
+   &__info 
+      max-width: 169px
+      font-weight: 600
+      font-size: 17px
+      line-height: 110%
+      display: flex
+      align-items: center
+      text-align: center
+      color: #7A008E
+      transform: matrix(0.95, 0.31, -0.31, 0.95, 0, 0)
+   &__name 
+      font-weight: 700
+      font-size: 24px
+      line-height: 130%
+      letter-spacing: 0.03em
+      margin-bottom: 16px
+   &__text 
+      font-weight: 500
+      font-size: 16px
+      line-height: 130%
+.footer 
+   background: linear-gradient(134.12deg, #EA57CE -16.54%, #3849E2 113.49%)
+   position: relative
+   padding: 55px 0 10px
+   &__clouds1 
+      position: absolute
+      left: 0
+      top: 0
+      z-index: 0
+   &__clouds2
+      position: absolute
+      right: 0
+      bottom: 0
+      z-index: 0
+   &__socials 
+      margin-top: 15px
+   &__box 
+      max-width: 782px
+      width: 100%
+      margin-bottom: 40px
+      justify-content: space-between
+      position: relative
+      z-index: 2
+   &__site 
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 45px
+      height: 45px
+      border: 1px solid #FFFFFF
+      border-radius: 50%
+      margin-right: 16px
+      transition: background 0.5s
+      &:hover 
+         background: white
+         .icon 
+            fill: $blue
+      &:last-child
+         margin-right: 0
+      &:nth-child(1)
+         .icon
+            width: 29px
+            height: 19px
+      &:nth-child(4)
+         .icon
+            width: 14px
+            height: 23px
+      .icon 
+         width: 23px
+         height: 19px
+         fill: white
+   &__item 
+      margin-bottom: 16px
+      &:last-child
+         margin-bottom: 0
+   &__link 
+      font-weight: 600
+      font-size: 16px
+      line-height: 130%
+      align-items: center
+      color: #FFFFFF
+   &__info 
+      font-weight: 500
+      font-size: 16px
+      line-height: 130%
+      color: #FFFFFF
+      margin-bottom: 5px
+   &__bottom 
+      align-items: center
+      font-weight: 500
+      font-size: 16px
+      line-height: 130%
+      color: #FFFFFF
+      span 
+         padding: 0 5px
+      a 
+         color: #FFFFFF
+         &:hover 
+            color: $light_blue
+.text 
+   padding: 94px 0
+   position: relative
+   &__img1 
+      left: 31px
+      top: -66px
+   &__img2
+      left: -22px
+      top: 87px
+   &__img3
+      left: 58px
+      bottom: -63px
+   &__img4
+      right: 10px
+      top: -65px
+   &__img5
+      right: -10px
+      top: 69px
+   &__img6
+      right: 70px
+      bottom: -56px
+      z-index: 0 !important
+   &__img7
+      right: 129px
+      top: 40px
+   &__img8
+      left: 169px
+      bottom: -13px
+   &__box 
+      position: relative
+      max-width: 1220px
+      margin: 0 auto
+      img 
+         position: absolute
+         z-index: 1
+   &__main 
+      max-width: 858px
+      width: 100%
+      font-weight: 700
+      font-size: 32px
+      line-height: 140%
+      text-align: center
+      text-transform: uppercase
+      color: #212121
+      margin: 0 auto
+      z-index: 1
+      position: relative
+      .color 
+         color: $light_blue
+   &__fig1
+      position: absolute
+      top: 6px
+      z-index: 1
+   &__fig2 
+      position: absolute
+      left: 0
+      top: -289px
+   &__fig3
+      position: absolute
+      right: -26px
+      top: -67px
+      z-index: 1
+   &__fig4
+      position: absolute
+      right: 0
+      top: -289px
+.one 
+   padding: 86px 0px 250px
+   position: relative
+   margin-top: 300px
+   &__fig1 
+      position: absolute
+      top: 147px
+      left: 0
+      z-index: 2
+   &__fig2
+      position: absolute
+      top: -314px
+      left: 0
+   &__fig3 
+      position: absolute
+      right: 0px
+      top: -207px
+      z-index: 1
+   &__fig4 
+      position: absolute
+      right: 0
+      top: -416px
+   &__box 
+      position: relative
+      text-align: center
+      max-width: 1220px
+      margin: 0 auto
+      img 
+         position: absolute
+         z-index: 1
+   &__name 
+      margin-bottom: 16px
+      font-weight: 800
+      font-size: 24px
+      line-height: 130%
+      letter-spacing: 0.03em
+      text-transform: uppercase
+      position: relative
+      z-index: 2
+   &__btn 
+      z-index: 2
+      width: 439px
+      height: 56px
+      position: relative
+      display: flex
+      align-items: center 
+      justify-content: center
+      font-weight: 700
+      font-size: 32px
+      line-height: 140%
+      border-radius: 50px
+      text-transform: uppercase
+      background: linear-gradient(313.58deg, #0017EA -2.71%, #00C2FF 48.64%, #00D047 100%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      background-clip: text
+      text-fill-color: transparent
+      margin: 0 auto 24px
+      transition: box-shadow 0.5s
+      &:hover 
+         -webkit-box-shadow: 0px 7px 31px 0px rgba(0,208,71,1)
+         -moz-box-shadow: 0px 7px 31px 0px rgba(0,208,71,1)
+         box-shadow: 0px 7px 31px 0px rgba(0,208,71,1)
+      &:after 
+         content: ""
+         position: absolute
+         inset: 0
+         border-radius: 50px
+         padding: 3px
+         background: linear-gradient(313.58deg, #0017EA -2.71%, #00C2FF 48.64%, #00D047 100%)
+         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+         -webkit-mask-composite: xor
+         mask-composite: exclude
+   &__text 
+      font-weight: 600
+      font-size: 16px
+      line-height: 130%
+      text-align: center
+      letter-spacing: 0.02em
+      max-width: 409px
+      width: 100%
+      margin: 0 auto
+      position: relative
+      z-index: 2
+   &__pic1
+      left: 15px
+      top: -225px
+   &__pic2
+      left: 161px
+      bottom: -163px
+      z-index: 1 !important
+   &__pic3
+      left: 363px
+      top: -28px
+   &__pic4
+      right: 274px
+      top: 108px
+   &__pic5
+      right: 69px
+      top: -207px
+   &__pic6
+      right: 6px
+      bottom: -109px
+   &__pic7
+      left: -28px
+      bottom: -14px
+   &__pic8
+      left: 50%
+      top: -354px
+      margin-left: -423px
+      z-index: 0 !important
+   &__pic9
+      right: -30px
+      top: -82px
+.dek 
+   padding: 60px 0
+   position: relative
+   &__box 
+      position: relative
+      z-index: 2
+      max-width: 1220px
+      margin: 0 auto
+   h2 
+      font-weight: 800
+      font-size: 32px
+      line-height: 130%
+      max-width: 472px
+      position: relative
+      z-index: 1
+   &__block 
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: 700
+      font-size: 30px
+      line-height: 30px
+      color: #000000
+      width: 559px
+      height: 90px
+      background: #FFFFFF
+      box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.2)
+      border-radius: 20px
+      transform: rotate(-2.84deg)
+      margin: 0 82px 0 auto
+   &__wrap
+      width: 402.07px
+      height: 679.28px
+      background: #FFFFFF
+      border-radius: 16.0827px
+      transform: rotate(-5.44deg)
+      padding: 22px
+      flex: 1 0 auto
+      max-width: 403px
+      top: -35px
+      left: 0px
+      position: relative
+   &__photo 
+      object-fit: cover
+      transform: rotate(5.56deg)
+      margin: -6px 0 7px -16px
+   &__name 
+      font-weight: 700
+      font-size: 25.7323px
+      line-height: 130%
+      color: #212121
+      transform: rotate(-0.44deg)
+      margin-bottom: 26px
+      margin-left: 6px
+   &__text 
+      font-weight: 500
+      font-size: 20.9075px
+      line-height: 130%
+      color: #525252
+      transform: rotate(-0.44deg)
+      margin-bottom: 26px
+      padding-left: 9px
+      &:last-child
+         margin-bottom: 0
+   &__fig1 
+      position: absolute
+      bottom: -43px
+      left: 0
+      z-index: 1
+   &__fig2
+      position: absolute
+      top: -133px
+      left: 0
+      z-index: 0
+   &__fig3
+      position: absolute
+      bottom: -124px
+      right: 0
+      z-index: 1
+   &__fig4
+      position: absolute
+      top: -166px
+      right: 0
+      z-index: 0
+   &__line 
+      transform: rotate(-16.97deg)
+      width: 89%
+      height: auto
+   &__block2 
+      width: 402.29px
+      height: 86.43px
+      background: #FFFFFF
+      box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15)
+      border-radius: 20px
+      transform: rotate(17.03deg)
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      margin-top: 74px
+      margin-left: auto
+      position: relative
+      right: -108px
+      z-index: 2
+      p 
+         font-weight: 600
+         font-size: 16.0827px
+         line-height: 26px
+         color: #525252
+         transform: rotate(0.03deg)
+         position: relative
+         top: -42px
+   &__block3
+      padding: 22px
+      width: 644.1px
+      height: 637.49px
+      background: #FFFFFF
+      box-shadow: 4.41167px 4.41167px 22.0584px rgba(0, 0, 0, 0.15)
+      border-radius: 33.0875px
+      box-sizing: border-box
+      transform: rotate(7.1deg)
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      position: relative
+      top: -44px
+   &__item 
+      width: 48.5%
+      height: 279.37px
+      border-radius: 8.86894px
+      transform: rotate(0.1deg)
+      padding: 20px
+      display: flex
+      flex-direction: column
+      &:nth-child(1)
+         background: linear-gradient(0deg, rgba(0, 23, 234, 0.14), rgba(0, 23, 234, 0.14)), #FFFFFF
+         .dek__num 
+            color: #0017EA
+      &:nth-child(2)
+         background: linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)), #FFFFFF
+      &:nth-child(3)
+         background: linear-gradient(0deg, rgba(213, 0, 248, 0.14), rgba(213, 0, 248, 0.14)), #FFFFFF
+      &:nth-child(4)
+         background: linear-gradient(0deg, rgba(0, 23, 234, 0.14), rgba(0, 23, 234, 0.14)), #FFFFFF
+   &__title 
+      font-weight: 600
+      font-size: 15.9641px
+      line-height: 21px
+      text-align: center
+      color: #000000
+      font-family: 'Poppins', sans-serif
+      margin-bottom: 35px
+      transform: rotate(-1.9deg)
+   &__list 
+      list-style-type: decide
+      padding-left: 17px
+      width: 80%
+      transform: rotate(-1.9deg)
+   &__li
+      font-family: 'Poppins', sans-serif
+      font-weight: 400
+      font-size: 13.3034px
+      line-height: 21px
+      color: #525252
+   &__bottom 
+      margin-top: auto
+      align-items: center
+      justify-content: space-between
+   &__num
+      font-weight: 700
+      font-size: 31.9282px
+      line-height: 32px
+      transform: rotate(-1.9deg)
+      font-family: 'Rubik', sans-serif
+   &__ans
+      text-align: center
+      font-weight: 400
+      font-size: 12.4165px
+      line-height: 16px
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: #000000
+      transform: rotate(-1.9deg)
+      font-family: 'Rubik', sans-serif
+      margin-top: auto
+   &__soc 
+      align-items: center
+      transform: rotate(-1.9deg)
+      p 
+         font-weight: 400
+         font-size: 12.4165px
+         line-height: 16px
+         letter-spacing: 0.05em
+         text-transform: uppercase
+         color: #000000
+         font-family: 'Rubik', sans-serif
+         margin-left: 7px
+   &__el 
+      display: flex
+      align-items: center
+      justify-content: center
+      width: max-content
+      white-space: nowrap
+      height: 65px
+      border-radius: 50%
+      font-weight: 700
+      font-size: 32px
+      line-height: 140%
+      text-transform: uppercase
+      background: linear-gradient(134.12deg, #EA57CE -16.54%, #3849E2 113.49%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      background-clip: text
+      text-fill-color: transparent
+      position: relative
+      padding: 0 24px
+      margin-right: 32px
+      z-index: 2
+      &:after 
+         content: ""
+         position: absolute
+         inset: 0
+         border-radius: 50px
+         padding: 3px
+         background: linear-gradient(134.12deg, #EA57CE -16.54%, #3849E2 113.49%)
+         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+         -webkit-mask-composite: xor
+         mask-composite: exclude
+   &__scroll 
+      position: relative
+      z-index: 3
+.items-wrap 
+   position: relative
+   display: flex
+   overflow: hidden
+   user-select: none
+.item:hover 
+   transform: scale(1.05)
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+.item:before 
+   content: counter(item)
+.marquee 
+   animation: scroll 40s linear infinite
+   margin-top: 70px
+   animation-iteration-count: infinite
+   -moz-animation-iteration-count: infinite
+   -webkit-animation-iteration-count: infinite
+   width: max-content
+.marquee:hover 
+   animation-play-state: pause
+@keyframes scroll 
+   0%
+      transform: translateX(0)
+   100%
+      transform: translateX(calc(-100% - 20px))
+
+.token 
+   padding: 100px 0
+   position: relative
+   margin-top: 25px
+   &__pic 
+      position: relative
+      left: -64px
+   &__left  
+      position: relative
+      z-index: 1
+   &__fig1
+      position: absolute
+      left: 0
+      top: -342px
+   &__fig2
+      position: absolute
+      left: -56px
+      top: 109px
+   &__fig3
+      position: absolute
+      right: 0
+      top: -232px
+   &__fig4
+      position: absolute
+      right: 0
+      top: 217px
+   &__fig5
+      position: absolute
+      left: -155px
+      top: -146px
+   &__box 
+      position: relative
+      align-items: center
+      justify-content: center
+   &__right
+      top: 25px
+      max-width: 621px
+      width: 100%
+      flex: 1 0 auto
+      position: relative
+      right: 15px
+   &__info
+      font-weight: 700
+      font-size: 24px
+      line-height: 130%
+      letter-spacing: 0.03em
+      margin-bottom: 16px
+      margin-top: -59px
+   &__tele
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 142px
+      height: 44px
+      border: 1px solid #0064DA
+      border-radius: 14px
+      font-weight: 600
+      font-size: 16px
+      line-height: 24px
+      color: #0064DA
+      transition: background 0.5s, color 0.5s
+      .icon 
+         width: 21.43px
+         height: 18px
+         margin-right: 10px
+         fill: #0064DA
+      &:hover 
+         background: #0064DA
+         color: white
+         .icon 
+            fill: white
+   &__title 
+      font-weight: 800
+      font-size: 32px
+      line-height: 130%
+      letter-spacing: 0.03em
+      text-transform: uppercase
+      color: #002B66
+      margin-bottom: 45px
+   &__text 
+      font-weight: 500
+      font-size: 26px
+      line-height: 130%
+      color: #002B66
+      margin-bottom: 32px
+      &:last-child
+         margin-bottom: 0
+      span 
+         font-weight: 700
+         font-size: 26px
+         line-height: 130%
+.order 
+   padding: 60px 0 100px
+   position: relative
+   .header__input
+      width: 405px
+   .header__btn
+      width: 109px
+   &__content 
+      position: relative
+      z-index: 2
+   &__box 
+      position: relative
+      max-width: 1220px
+      margin: 0 auto
+      align-items: center
+   &__fig1 
+      position: absolute
+      left: 0
+      top: 200px
+      z-index: 1
+   &__fig2
+      position: absolute
+      left: 0
+      top: 0
+   &__fig3
+      position: absolute
+      right: 0
+      top: 230px
+      z-index: 1
+   &__fig4
+      position: absolute
+      right: 0
+      top: -164px
+   h2 
+      margin-bottom: 29px
+   &__text 
+      font-weight: 600
+      font-size: 16px
+      line-height: 130%
+      align-items: center
+      letter-spacing: 0.02em
+      color: #002B66
+      max-width: 530px
+   .header__link
+      border: 1px solid $light_blue
+      .icon 
+         fill: $light_blue
+      &:hover 
+         background: $light_blue
+         .icon 
+            fill: white
+.about 
+   position: relative
+   padding: 100px 0
+   &__group 
+      z-index: -1
+      position: absolute
+      bottom: -240px
+      left: 0
+      width: 100%
+   &__name 
+      font-weight: 700
+      font-size: 24px
+      line-height: 130%
+      letter-spacing: 0.03em
+      color: #002B66
+      margin-bottom: 16px
+   &__text 
+      font-weight: 500
+      font-size: 16px
+      line-height: 130%
+      letter-spacing: 0.02em
+      color: #002B66
+   &__slider 
+      margin: -6px -10px 0
+      width: 1380px
+      .slick-list 
+         overflow: visible
+   &__item 
+      position: relative
+      width: auto
+      padding: 32px 24px
+      height: 242px
+      background: linear-gradient(91.75deg, rgba(255, 255, 255, 0.69) 4.1%, rgba(255, 255, 255, 0.16) 94.01%)
+      box-shadow: 10px 10px 26px rgba(0, 0, 0, 0.25)
+      backdrop-filter: blur(22.5px)
+      border-radius: 10px
+      margin: 0 10px
+      &:nth-child(8)
+         .about__bg
+            top: 0
+      &:nth-child(10)
+         .about__bg
+            top: 0
+      &:last-child
+         opacity: 0
+   &__bg 
+      position: absolute
+      right: 0
+      bottom: 0
+.slick-arrow 
+   display: flex
+   align-items: center
+   justify-content: center
+   background: rgba(255, 255, 255, 0.3)
+   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1)
+   border-radius: 100px
+   width: 45px
+   height: 45px
+   z-index: 2
+   position: relative
+   left: inherit
+   right: 0
+   margin-left: 70.5%
+   top: -15px
+   transition: opacity 0.5s, background 0.5s
+   &:hover 
+      background: $blue
+      .icon 
+         fill: white
+   .icon 
+      width: 12px
+      height: 21px
+      padding-left: 3px
+.slick-prev:before, .slick-next:before
+   display: none
+.slick-next
+   margin-left: 75.5%
+   top: -301px
+.slick-prev
+   .icon 
+      padding-left: 0px
+      padding-right: 3px
+.slick-disabled 
+   opacity: 0
+.menu a.parent
+   margin: 0px 30px 0px 0px
+.menu li
+   position: relative
+   list-style: none
+.menu__list
+   display: flex
+   position: relative
+.menu__list>li
+   margin: 0px 30px 0px 0px
+   padding: 50px
+   &:hover 
+      .menu__link
+         background: linear-gradient(134.12deg, #EA57CE -16.54%, #3849E2 113.49%)
+         -webkit-background-clip: text
+         -webkit-text-fill-color: transparent
+         background-clip: text
+         text-fill-color: transparent
+.menu__link 
+   color: red
+.sub-menu__list 
+   display: none
+   width: auto
+   height: auto
+   background: linear-gradient(91.75deg, rgba(255, 255, 255, 0.69) 4.1%, rgba(255, 255, 255, 0.16) 94.01%)
+   box-shadow: 8px 10px 26px rgba(100, 0, 116, 0.25)
+   backdrop-filter: blur(35px)
+   border-radius: 10px
+   position: absolute
+   left: 16px
+   top: -360px
+   z-index: 5
+   padding: 40px 20px 40px 26px
+.sub-menu__list>li
+   background-color: #fff
+   padding: 3px 0px
+.sub-menu__list>li:last-child 
+   padding-bottom: 100px
+.sub-sub-menu__list:before 
+   content: ""
+   display: block
+   background: #C4C4C4
+   height: 279px
+   position: absolute
+   width: 1px
+   left: 0
+   top: 16px
+.sub-menu__list li:after 
+   display: none !important
+body.mouse .menu__list>li:hover .sub-menu__list 
+   display: block
+body.mouse .sub-menu__list>li:hover .sub-sub-menu__list 
+   display: flex
+   flex-direction: column
+   columns: auto
+   max-height: 325px
+   flex-flow: column wrap
+   width: auto
+   justify-content: flex-start
+body.touch .sub-menu__list.open
+   display: block
+body.touch .sub-sub-menu__list.open
+   display: block
+body.touch .arrow 
+   display: block
+.road 
+   position: relative
+   padding: 100px 0 60px
+   margin-top: 100px
+   &__bg 
+      position: absolute
+      left: 0
+      top: -200px
+      z-index: -1
+   &__check
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+   &__flex 
+      justify-content: space-between
+   &__left  
+      width: 48%
+   &__item 
+      margin-bottom: 22px
+      &:last-child
+         margin-bottom: 0
+   &__box 
+      position: relative
+      max-width: 1080px
+      margin: 0 auto
+   &__text 
+      max-width: 354px
+      font-weight: 600
+      font-size: 16px
+      line-height: 130%
+      letter-spacing: 0.02em
+      margin: 20px 0
+   .footer__site
+      border: 1px solid $light_blue
+      &:hover 
+         background: $light_blue
+         .icon 
+            fill: white
+      .icon 
+         fill: $light_blue
+   &__pic 
+      margin: -437px 0 0 -100px
+      position: relative
+      z-index: -1
+   .menu__link
+      font-weight: 800
+      font-size: 55px
+      line-height: 130%
+      letter-spacing: 0.15em
+      color: #C4D1FF
+      transform: matrix(0.71, -0.41, 1.22, 0.71, 0, 0)
+      display: block
+      cursor: pointer
+      &:hover 
+         background: linear-gradient(134.12deg, #EA57CE -16.54%, #3849E2 113.49%)
+         -webkit-background-clip: text
+         -webkit-text-fill-color: transparent
+         background-clip: text
+         text-fill-color: transparent
+   &__list 
+      position: absolute
+      &_1 
+         bottom: 33px
+         left: 240px
+      &_2
+         bottom: 75px
+         right: 70px
+         .sub-menu__list
+            width: 1080px
+            left: -238%
+            top: -337%
+      &_3
+         top: 235px
+         right: 140px
+         .menu__link
+            transform: matrix(0.71, 0.41, -1.22, 0.71, 0, 0)
+         .sub-menu__list
+            left: -138%
+            top: -200px
+      &_4
+         right: 59px
+         top: 8px
+         .sub-menu__list
+            left: -138%
+            top: 0
+   &__name 
+      font-weight: 600
+      font-size: 16px
+      line-height: 130%
+      letter-spacing: 0.02em
+      margin-bottom: 22px
+.custom-checkbox
+   position: absolute
+   z-index: -1
+   opacity: 0
+.custom-checkbox+label 
+   display: flex
+   align-items: flex-start
+   user-select: none
+   cursor: pointer
+   justify-content: center
+.custom-checkbox+label:hover:before 
+   border: 2px solid $blue
+.custom-checkbox+label::before 
+   content: "\2713"
+   display: inline-block
+   flex-shrink: 0
+   flex-grow: 0
+   background-repeat: no-repeat
+   background-position: center center
+   background-size: 12px
+   background: transparent
+   margin: 3px 16px 0 0
+   transition: 0.2s
+   flex: 1 0 auto
+   color: transparent
+   max-width: 18px
+   width: 18px
+   height: 18px
+   border: 2px solid #80E974
+   border-radius: 3px
+.custom-checkbox:checked+label::before 
+   content: "\2713"
+   color: white
+   background: #80E974
+   border: 2px solid #80E974
+   font-size: 16px
+   line-height: 17px
+   -webkit-box-shadow: -1px 8px 45px 2px rgba(128,233,116,1)
+   -moz-box-shadow: -1px 8px 45px 2px rgba(128,233,116,1)
+   box-shadow: -1px 8px 45px 2px rgba(128,233,116,1)
+   display: flex
+   align-items: center
+   justify-content: center
+.checkbox
+   margin-bottom: 10px
+   p 
+      font-weight: 500
+      font-size: 16px
+      line-height: 130%
+      color: #002B66
+      min-width: 360px
+   &:last-child
+      margin-bottom: 0
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $light_blue
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 7px
+   width: 7px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $light_blue
+   border-radius: 6px
