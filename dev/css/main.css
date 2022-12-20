@@ -3171,7 +3171,7 @@ html *::-webkit-scrollbar-thumb {
     height: 210px;
   }
   .text__main {
-    font-size: 21px;
+    font-size: 21px !important;
     z-index: 2;
   }
   .text__box img {
@@ -3384,5 +3384,15 @@ html *::-webkit-scrollbar-thumb {
   }
   .road__left {
     margin-bottom: 15px;
+  }
+  .eg .token__text br {
+    display: block;
+  }
+  .eg .one__fig1 {
+    z-index: 0;
+  }
+  .eg .one__btn {
+    width: 100%;
+    font-size: 17px;
   }
 }
