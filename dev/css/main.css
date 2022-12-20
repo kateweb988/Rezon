@@ -1165,6 +1165,7 @@ div, q {
 .text__img8 {
   left: 169px;
   bottom: -13px;
+  z-index: 0 !important;
 }
 .text__box {
   position: relative;
@@ -2237,6 +2238,20 @@ html *::-webkit-scrollbar-track {
 html *::-webkit-scrollbar-thumb {
   background-color: #0064DA;
   border-radius: 6px;
+}
+
+.eg .dek__name {
+  margin-bottom: 8px;
+}
+.eg .one__btn {
+  width: 508px;
+  font-size: 28px;
+}
+.eg .text__main {
+  font-size: 37px;
+}
+.eg .text__img8 {
+  left: 287px;
 }
 
 @media screen and (min-width: 1920px) {
