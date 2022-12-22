@@ -683,9 +683,9 @@
       right: 0
       top: -289px
 .one 
-   padding: 86px 0px 250px
+   padding: 86px 0px 170px
    position: relative
-   margin-top: 300px
+   margin-top: 200px
    &__fig1 
       position: absolute
       top: 147px
@@ -953,7 +953,7 @@
       list-style-type: decide
       padding-left: 17px
       width: 80%
-      transform: rotate(-1.9deg)
+      // transform: rotate(-2deg)
    &__li
       font-family: 'Poppins', sans-serif
       font-weight: 400
@@ -978,7 +978,7 @@
       letter-spacing: 0.05em
       text-transform: uppercase
       color: #000000
-      transform: rotate(-1.9deg)
+      // transform: rotate(-2deg)
       font-family: 'Rubik', sans-serif
       margin-top: auto
    &__soc 
@@ -1512,3 +1512,12 @@ html *::-webkit-scrollbar-thumb
       font-size: 37px
    .text__img8
       left: 287px
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) 
+   .burger.active
+      background: white
+      backdrop-filter: inherit
+@media not all and (min-resolution:.001dpcm) 
+   @supports (-webkit-appearance: none) 
+      .burger.active
+         background: white
+         backdrop-filter: inherit
