@@ -1079,6 +1079,9 @@ div, q {
 .footer__site:last-child {
   margin-right: 0;
 }
+.footer__site:nth-child(3) {
+  display: none;
+}
 .footer__site:nth-child(1) .icon {
   width: 29px;
   height: 19px;
@@ -1811,10 +1814,13 @@ div, q {
   font-weight: 600;
   font-size: 16px;
   line-height: 130%;
-  align-items: center;
   letter-spacing: 0.02em;
   color: #002B66;
-  max-width: 530px;
+  max-width: 590px;
+  margin-bottom: 15px;
+}
+.order__text:last-child {
+  margin-bottom: 0;
 }
 .order .header__link {
   border: 1px solid #0064DA;
@@ -2073,6 +2079,9 @@ body.touch .arrow {
 }
 .road .footer__site {
   border: 1px solid #0064DA;
+}
+.road .footer__site:nth-child(3) {
+  display: none;
 }
 .road .footer__site:hover {
   background: #0064DA;

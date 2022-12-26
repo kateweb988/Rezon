@@ -200,6 +200,8 @@ $('.about__slider').slick({
    infinite: true,
    arrows: true,
    slidesToShow: 1,
+   autoplay: true,
+   autoplaySpeed: 4500,
    slidesToScroll: 1,
    prevArrow: '<button type="button" class="slick-prev"><svg class="icon"><use xlink:href="/img/svg-sprite.svg#left-arrow"></use></svg></button>',
    nextArrow: '<button type="button" class="slick-next"><svg class="icon"><use xlink:href="/img/svg-sprite.svg#right-arrow"></use></svg></button>',
@@ -209,6 +211,8 @@ $('.about__slider').slick({
          settings: {
             infinite: true,
             slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 4500,
             slidesToScroll: 1,
             arrows: false, 
             dots: true

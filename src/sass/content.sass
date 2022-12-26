@@ -575,6 +575,8 @@
             fill: $blue
       &:last-child
          margin-right: 0
+      &:nth-child(3)
+         display: none
       &:nth-child(1)
          .icon
             width: 29px
@@ -1182,10 +1184,12 @@
       font-weight: 600
       font-size: 16px
       line-height: 130%
-      align-items: center
       letter-spacing: 0.02em
       color: #002B66
-      max-width: 530px
+      max-width: 590px
+      margin-bottom: 15px
+      &:last-child
+         margin-bottom: 0
    .header__link
       border: 1px solid $light_blue
       .icon 
@@ -1377,6 +1381,8 @@ body.touch .arrow
       margin: 20px 0
    .footer__site
       border: 1px solid $light_blue
+      &:nth-child(3)
+         display: none 
       &:hover 
          background: $light_blue
          .icon 
