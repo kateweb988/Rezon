@@ -655,7 +655,7 @@ div, q {
   z-index: 1;
 }
 .header__item_1 {
-  background: url(/img/bg1.png) no-repeat center center/cover;
+  background: url(../img/bg1.png) no-repeat center center/cover;
   top: -103px;
 }
 .header__item_1 .header__pic {
@@ -669,7 +669,7 @@ div, q {
   padding-top: 192px;
 }
 .header__item_2 {
-  background: url(/img/bg2.png) no-repeat center center/cover;
+  background: url(../img/bg2.png) no-repeat center center/cover;
   top: 0;
   max-height: 460px;
   margin-top: 120px;
@@ -683,7 +683,7 @@ div, q {
   justify-content: flex-start;
 }
 .header__item_3 {
-  background: url(/img/bg3.png) no-repeat center center/cover;
+  background: url(../img/bg3.png) no-repeat center center/cover;
   top: 0;
   max-height: 460px;
   margin-top: 120px;
@@ -712,7 +712,7 @@ div, q {
   height: 80.32px;
   border-radius: 9.21235px;
   transform: matrix(0.96, 0, -0.32, 1, 0, 0);
-  background: url(/img/border.png) no-repeat center center/cover;
+  background: url(../img/border.png) no-repeat center center/cover;
 }
 .header__item_3 .header__bonus {
   font-weight: 500;
@@ -725,7 +725,7 @@ div, q {
   font-weight: 700;
 }
 .header__item_4 {
-  background: url(/img/bg4.png) no-repeat center center/cover;
+  background: url(../img/bg4.png) no-repeat center center/cover;
   top: 0;
   max-height: 460px;
   margin-top: 120px;
@@ -768,7 +768,7 @@ div, q {
   max-width: 105px;
 }
 .header__item_5 {
-  background: url(/img/bg1.png) no-repeat center center/cover;
+  background: url(../img/bg1.png) no-repeat center center/cover;
   top: -77px;
 }
 .header__item_5 .header__pic {
@@ -1003,7 +1003,7 @@ div, q {
   justify-content: center;
   width: 249px;
   height: 240px;
-  background: url(/img/block.png) no-repeat center center/cover;
+  background: url(../img/block.png) no-repeat center center/cover;
   top: -79px;
   right: 116px;
 }
